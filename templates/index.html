@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <style>
+            .tab5 {
+tab-size: 5;
+}
+
+
+.tab6 {
+tab-size: 8;
+}
+
+
+.tab7 {
+tab-size: 10;
+}
+
+        </style>
+        <form action ="/predict" method="POST">
+            Sepal Length <pre class="tab5" ></pre>  <input type="text" name="sepal_length"><br><br>
+            Sepal Width <pre class="tab5" ></pre>  <input type="text" name="sepal_width"><br><br>
+            Petal Length <pre class="tab5" ></pre>  <input type="text" name="petal_length"><br><br>
+            Petal Width <pre class="tab5" ></pre>  <input type="text" name="petal_width"><br><br><br>
+            
+            <input type="submit" value="PREDICT"><br><br><br>
+
+           <b> class is : </b>{{result}}<br>
+           <img src="{{ UserImage }}" alt="UserImage">
+        </form>
+    </body>
+</html>
